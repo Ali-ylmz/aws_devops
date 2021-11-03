@@ -20,13 +20,13 @@ def main_post():
     if request.method == 'POST':
         alpha = request.form['number']
         if not alpha.isdecimal():
-            return render_template('index.html', developer_name='Vincenzo', not_valid=True)
+            return render_template('index.html', developer_name='ali ylmz', not_valid=True)
         number=int(alpha)
         if not 0 < number < 4000:
-            return render_template('index.html', developer_name='Vincenzo', not_valid=True)
+            return render_template('index.html', developer_name='ali ylmz', not_valid=True)
         return render_template('result.html', number_decimal=number, number_roman=convert(number), developer_name='Vincenzo')
     else:
-        return render_template('index.html', developer_name='Vincenzo', not_valid=False)
+        return render_template('index.html', developer_name='ali ylmz', not_valid=False)
 
 if __name__ == '__main__':
     #app.run(debug=True)
